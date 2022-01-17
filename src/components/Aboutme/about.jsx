@@ -2,7 +2,7 @@ import "./about.scss"
 
 export default function about() {
     return (
-        <div className='me'>
+        <div className='me' id="about">
             
         </div>
     )

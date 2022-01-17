@@ -2,7 +2,7 @@ import "./intro.scss"
 
 export default function intro() {
     return (
-        <div className="intro">
+        <div className="intro" id="intro">
             <p className="text">Welcome! My name is Antonio Madureira</p>
         </div>
     )
