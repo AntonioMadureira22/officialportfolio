@@ -1,3 +1,64 @@
+@import "../../global.scss";
+
 .me {
-    background-color: #4C8577;;
+    background-color: $bgColor;
+    display: flex;
+    
+    
+    .left{
+        flex: 0.5;
+        position: relative;
+        color: $textColor;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 5rem 2rem;
+
+        h1{
+            margin: 10px 0;
+            font-size: 50px;
+        }
+        h2{
+            font-size: 35px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        
+        p{
+           font-size: 20px;
+           font-weight: 600;
+           text-align: left;
+           margin: 20px 0;
+
+        }
+
+
+    }
+
+    .right{
+        flex: 0.5;
+        color: $textColor;
+
+        .itemContainer{
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+
+            .icon{
+                font-weight: 700;
+                margin-left: 40px;
+            }
+        }
+        h1{
+            flex-direction: row;
+            float: right;
+            margin: 20px 0;
+            text-decoration: underline;
+            font-size: 35px;
+            justify-content: right;
+        }
+        
+    }
+    
 }
