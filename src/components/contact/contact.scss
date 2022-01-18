@@ -1,3 +1,19 @@
+@import "../../global.scss"; 
 .contact {
     background-color: #4C8577
+
+    
+
+
+}
+.itemContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    .icon{
+        color: $textColor;
+        font-weight: 700;
+    }
 }
