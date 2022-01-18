@@ -13,6 +13,18 @@ export default function portfolio() {
                     <img src="images/react logo.png" alt="" />
                     <h3>banking</h3>
                 </div>
+                <div className="item">
+                    <img src="images/react logo.png" alt="" />
+                    <h3>banking</h3>
+                </div>
+                <div className="item">
+                    <img src="images/react logo.png" alt="" />
+                    <h3>banking</h3>
+                </div>
+                <div className="item">
+                    <img src="images/react logo.png" alt="" />
+                    <h3>banking</h3>
+                </div>
             </div>
         </div>
     )
