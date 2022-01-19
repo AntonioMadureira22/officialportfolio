@@ -1,23 +1,36 @@
+import { SpaRounded } from "@material-ui/icons";
+import { useState } from "react";
 import "./contact.scss"
-import Link from "@material-ui/core/Link"
-import { GitHub, LinkedIn } from "@material-ui/icons"
 
-export default function contact() {
+
+export default function Contact() {
+    const [message,setMessage] = useState(false)
+
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        setMessage(true)
+    }
+
     return (
+
         <div className="contact" id="contact">
-            <div className="itemContainer">
-                <Link className="icon"
-                    href="https://github.com/AntonioMadureira22">
-                    <GitHub />
-                </Link>
-                <Link className="icon"
-                    href="https://www.linkedin.com/in/antonio-madureira-a6b806191/">
-                    <LinkedIn />
-                </Link>
-
-
+            <div className="left">
+                <img src="images/handshake.png" alt="handshake" />
             </div>
+            <div className="right">
+                <h2>Contact</h2>
+                <form onSubmit={handleSubmit}>
+                    <input type="text" placeholder="Email" />
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit">Send</button>
+                    {message && <span>Thank you for your Message!</span>}
+                </form>
+            </div>
+
+
+
         </div>
+
 
     )
 }

@@ -1,21 +1,64 @@
 @import "../../global.scss"; 
 
 .contact {
-    background-color: #4C8577
-
-    
-
-
-}
-.itemContainer{
+    background-color: #4C8577;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-    .icon{
-        color: $textColor;
-        font-weight: 700;
-        
+
+
+    .left{
+        flex: 1;
+        img{
+            height: 70%;
+        }
+    }
+
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+            font-size: 35px;
+            color: $textColor;
+        }
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            input{
+                width: 300px;
+                height: 30px;
+                font-size: 14px;
+            }
+
+            textarea{
+                width: 300px;
+                height: 200px;
+                font-size: 14px;
+            }
+            
+            button{
+                width: 150px;
+                height: 30px;
+                color: $textColor;
+                background-color: $mainColor;
+                border: 2px solid $textColor;
+                border-radius: 10px;
+                font-weight: 600;
+                cursor: pointer;
+
+            }
+
+            span {
+                color: $textColor;
+            }
+        }
     }
 }
+
