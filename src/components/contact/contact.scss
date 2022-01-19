@@ -3,6 +3,10 @@
 .contact {
     background-color: #4C8577;
     display: flex;
+    
+    @include mobile{
+        flex-direction: column;
+    }
 
 
     .left{
@@ -35,12 +39,22 @@
                 width: 300px;
                 height: 30px;
                 font-size: 14px;
+
+                @include mobile{
+                    width: 200px;
+                    height: 20px;
+                }
             }
 
             textarea{
                 width: 300px;
                 height: 200px;
                 font-size: 14px;
+
+                @include mobile{
+                    width: 200px;
+                    height: 100px;
+                }
             }
             
             button{
