@@ -2,7 +2,7 @@ export const featuredPortfolio = [
     {
         id: 1,
         title: "Powers Family BBQ Sauce",
-        img: "images/apple-touch-icon.png",
+        img: "images/pfb.png",
     },
 
     {

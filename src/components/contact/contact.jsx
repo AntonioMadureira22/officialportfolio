@@ -1,4 +1,4 @@
-import { SpaRounded } from "@material-ui/icons";
+
 import { useState } from "react";
 import "./contact.scss"
 
