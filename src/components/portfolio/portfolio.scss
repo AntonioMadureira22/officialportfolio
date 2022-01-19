@@ -18,22 +18,10 @@
         list-style: none;
         display: flex;
 
-        li{
-            font-size: 22px;
-            margin-right: 50px;
-            padding: 7px;
-            border-radius: 10px;
-            cursor: pointer;
-
-            &.active{
-                background-color: $mainColor;
-                color: $textColor;
-            }
-        }
     }
 
     .container{
-        width: 50%;
+        width: 70%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -43,13 +31,15 @@
             width: 220px;
             height: 150px;
             border-radius: 20px;
-            border: 2px solid $textColor;
+            border: 1px solid $mainColor;
             margin: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: $mainColor;
             position: relative;
+            transition: all 0.5s ease;
+            cursor: pointer;
             
             h3{
                 position: absolute;
@@ -61,6 +51,14 @@
               height: 100%;
               object-fit: cover;
               z-index: 1;
+            }
+
+            &:hover{
+               background-color: $textColor; 
+               img{
+                   opacity: 0.2;
+                   z-index: 0;
+               }
             }
         }
         
